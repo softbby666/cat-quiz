@@ -14,12 +14,12 @@ The main objective of this project is to have a first experience developing
 web applications (WebApp) that interact with the user through the browser and logic,
 using HTML, CSS and JavaScript as tools.
 
-**The MVP (minimum viable product) of your implementation must:**
+**The MVP (minimum viable product) must have:**
 
-1. Show a welcome screen, ask for your name to start playing.
-2. Show a Hello [your name] message and 2 buttons to start playing.
-3. Play with type A questions (about cats)
-4. Play with type B questions (about another subject)
+1. A welcome screen, ask for your name to start playing.
+2. A "Hello, [your name]" message and 2 buttons to start playing.
+3. Play with type A questions (about cats in general) button.
+4. Play with type B questions (about cats'colors) button.
 5. Launch question 1 with alternatives, the user answers, then question 2 and then question 3 are shown.
-6. Show a results screen (correct answers)
-7. And 2 buttons: play again or exit window.
+6. Show a results alert (correct answers)
+7. Show aAnd 2 buttons: play again or exit window.
