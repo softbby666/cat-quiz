@@ -1,4 +1,5 @@
 // 1. HTML DOM Events
+// 1ra parte de la función: declararla:
 document.getElementById("demo").onclick = function () {
   myFunction();
 };
@@ -31,3 +32,13 @@ myHeading.textContent = "Hello, world!";
 //     zoom: 8,
 //   });
 // }
+
+// 5
+function cambiar() {
+  document.getElementById("bienvenida").innerHTML = "Hola te cambié";
+  //la única tarea de esta función es cambiar o reemplazar el texto del #id con el valor asignado a la propiedad "innerHTML"
+}
+// cambiar(); es la 2da parte ejecutadora de la función. Vamos a visualizarla cuando se de un ONCLICK en el botón:
+document.getElementById("button").onclick = function () {
+  cambiar();
+};

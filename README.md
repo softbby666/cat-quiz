@@ -21,6 +21,7 @@ using HTML, CSS and JavaScript as tools.
 3. Play with type A questions (about cats in general) button.
 4. Play with type B questions (about cats'colors) button.
 5. One screen per question with 3 alternatives.
-6. Once the user answers, then question 2 and then question 3 are displayed.
-7. A results alert with the correct answer.
-8. A final screen with 2 buttons: play again or exit window.
+6. A counter
+7. Once the user answers, then question 2 and then question 3 are displayed.
+8. A results alert with the correct answer.
+9. A final screen with 2 buttons: play again or exit window.

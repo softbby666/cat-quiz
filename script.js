@@ -1,24 +1,23 @@
-// Pantalla #1 portada
-//Declarar 2 variables. Una cuyo valor sea el ID del boton para ingresar el nombre del usuario y otra el ID del título o heading donde va a aparecer el nombre del usuario:
+// Screen #1 Intro
+//Declarar 2 variables: Una cuyo valor sea el ID del boton para ingresar el nombre del usuario y otra el ID del título o heading donde va a aparecer el nombre del usuario:
 const buttonN = document.querySelector("#buttonName");
 const heading = document.querySelector("#nombre");
 //window.prompt() instructs the browser to display a dialog with an optional message prompting the user to input some text, and to wait until the user either submits the text or cancels the dialog.
 buttonN.onclick = () => {
   const name = prompt("¿Cuál es tu nombre?");
   alert(`Hola, ${name}, es hora de comenzar!`);
+  document.getElementsByClassName("start-quiz")[0].style.display = "block";
+  document.getElementsByClassName("intro")[0].style.display = "none";
+};
+
+// Screen #2 Start Quiz
+
+{
   nombre.textContent = `¿Estás list@, ${name}?`;
-};
-// 1ra parte de la función: declararla:
-function cambiar() {
-  document.getElementById("bienvenida").innerHTML = "Hola te cambié";
-  //la única tarea de esta función es cambiar o reemplazar el texto del #id con el valor asignado a la propiedad "innerHTML"
 }
-// cambiar(); es la 2da parte ejecutadora de la función. Vamos a visualizarla cuando se de un ONCLICK en el botón:
-document.getElementById("button").onclick = function () {
-  cambiar();
-};
+
 // **********************************
-function botonInicio() {
+function startButton() {
   document.getElementsByClassName("pregunta1")[0].style.display = "block";
   document.getElementsByClassName("intro")[0].style.display = "none";
 }
