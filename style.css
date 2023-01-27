@@ -1,16 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: antiquewhite;
 }
 body {
-  height: 100%;
-  width: 100%;
-  background-color: #2f4a92;
+  background-color: rgb(57, 56, 87);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  color: antiquewhite;
 }
 .intro {
-  padding: 30px;
+  background-image: url(https://wallpapercave.com/uwp/uwp2288112.jpeg);
+  background-size: cover;
 }
 .start-quiz,
 .pregunta1,
@@ -23,12 +26,20 @@ body {
 
 button {
   text-align: center;
-  font-size: 15px;
-  background-color: #e232c1;
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 1.3rem;
+  background-color: #aac3eb;
   color: black;
   border-radius: 20px;
-  width: 120px;
-  height: 40px;
-  margin: 10px;
-  font-family: arial blak;
+  border: none;
+  display: block;
+  cursor: pointer;
+}
+button:hover {
+  background-color: pink;
+}
+button:focus {
+  outline: none;
+  background-color: rgb(144, 141, 146);
 }

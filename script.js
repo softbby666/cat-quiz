@@ -13,13 +13,11 @@ buttonN.onclick = () => {
 // Screen #2 Start Quiz
 
 {
-  nombre.textContent = `¿Estás list@, ${name}?`;
+  nombre.textContent = `¿Estás list@ para comenzar la trivia, ${name}?`;
 }
-
-// **********************************
 function startButton() {
   document.getElementsByClassName("pregunta1")[0].style.display = "block";
-  document.getElementsByClassName("intro")[0].style.display = "none";
+  document.getElementsByClassName("start-quiz")[0].style.display = "none";
 }
 function siguientePregunta2() {
   document.getElementsByClassName("pregunta2")[0].style.display = "block";
