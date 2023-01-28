@@ -67,6 +67,7 @@ function resultado() {
   document.getElementsByClassName("reiniciar")[0].style.display = "block";
   document.getElementsByClassName("pregunta3")[0].style.display = "none";
 }
+
 function reiniciar() {
   document.getElementsByClassName("intro")[0].style.display = "block";
   document.getElementsByClassName("reiniciar")[0].style.display = "none";

@@ -9,8 +9,13 @@
   </head>
   <body>
     <!-- screen #1 Intro -->
-    <header id="intro">
+    <header id="intro" class="intro">
       <h1>Bienvenid@ a la trivia del ¡Gatolicismo!</h1>
+      <br />
+      <img
+        src="https://i.pinimg.com/originals/f1/3f/0c/f13f0ca72d8fb6af585cba995ca08a61.jpg"
+        alt="gato aesthetic"
+      />
       <form>
         <input
           type="text"
@@ -22,7 +27,7 @@
       </form>
     </header>
     <!-- screen #2 Welcome / Start Quiz -->
-    <main id="start-quiz">
+    <main id="start-quiz" class="start-quiz">
       <h1>Hola, <span id="nombre"></span></h1>
       <button type="button" class="button" id="start" onclick="startButton()">
         Comenzar a jugar
@@ -32,8 +37,7 @@
       <section id="pregunta1" class="pregunta1">
         <h1>1. ¿QUÉ TIPO DE GATO ES ESTE?</h1>
         <img
-          src=""
-          class="cat"
+          src="https://i.pinimg.com/564x/32/8c/56/328c567a117b663e0717fdb3d1461f36.jpg"
           alt="gato color crema con patas, orejas, nariz y cola de color café oscuro"
         />
         <h3>
@@ -48,7 +52,7 @@
       </section>
       <section id="pregunta2" class="pregunta2">
         <img
-          src="cat-eating.jpeg"
+          src="https://i.pinimg.com/originals/97/2d/4d/972d4d1e53f0322522c994dccd1a8a02.jpg"
           class="cat"
           alt="gato con su platito de comida"
         />
@@ -67,7 +71,10 @@
         </button>
       </section>
       <section id="pregunta3" class="pregunta3">
-        <img src="cat-sleeping.jpeg" class="cat" alt="gato durmiendo" />
+        <img
+          src="https://i.pinimg.com/originals/a2/3f/d3/a23fd3b3df5dac8ffdf79ae32168c474.jpg"
+          alt="cat sleeping in a weird position"
+        />
         <h2>3. ¿CUÁNTAS HORAS AL DIA DUERMEN LOS GATOS?</h2>
         <h3>
           <input type="radio" name="pregunta3" value="a" id="correcto3" />a. 12
@@ -80,7 +87,10 @@
       </section>
     </form>
     <section class="reiniciar">
-      <img src="felicidades.webp" alt="gato dando felicitaciones" />
+      <img
+        src="https://i.pinimg.com/originals/94/71/33/947133df457f84efae50fe6900a4a921.jpg"
+        alt="gato dando felicitaciones"
+      />
       <button onclick="reiniciar()">Reiniciar</button>
     </section>
     <script src="script.js"></script>
