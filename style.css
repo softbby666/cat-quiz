@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,9 +9,21 @@ body {
   background-color: rgb(57, 56, 87);
   align-items: center;
   justify-content: center;
+  text-align: center;
   display: flex;
   height: 100vh;
   color: antiquewhite;
+}
+h1 {
+  font-family: "IBM Plex Mono", monospace;
+}
+p {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .start-quiz,
 .pregunta1,
@@ -22,7 +36,7 @@ body {
 
 .button {
   text-align: center;
-  font-size: 1.1rem;
+  font-family: "IBM Plex Mono", monospace;
   width: 100%;
   padding: 1.3rem;
   background-color: #aac3eb;

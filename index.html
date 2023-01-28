@@ -15,7 +15,7 @@
   <body>
     <!-- screen #1 Intro -->
     <header id="intro" class="intro">
-      <h1>Bienvenid@ a la trivia del ¡Gatolicismo!</h1>
+      <h1>Hola, perrxs</h1>
       <br />
       <img
         src="https://i.pinimg.com/originals/f1/3f/0c/f13f0ca72d8fb6af585cba995ca08a61.jpg"
@@ -44,19 +44,18 @@
     </main>
     <form action="">
       <section id="pregunta1" class="pregunta1">
-        <h1>1. ¿QUÉ TIPO DE GATO ES ESTE?</h1>
+        <h1>1. ¿Qué tipo de gato es este?</h1>
         <img
           src="https://i.pinimg.com/564x/32/8c/56/328c567a117b663e0717fdb3d1461f36.jpg"
           alt="gato color crema con patas, orejas, nariz y cola de color café oscuro"
         />
-        <h3>
-          <!-- se usa "value" para definir el calor que se enviará por este elemento -->
-          <input type="radio" name="pregunta1" value="a" />a. Angora
-          <input type="radio" name="pregunta1" value="b" />b. Persa de pelo
-          largo
+        <p>
+          <!-- se usa "value" para definir el valor que se enviará por este elemento -->
+          <input type="radio" name="pregunta1" value="a" />a. Dinosaurio <br />
+          <input type="radio" name="pregunta1" value="b" />b. De cartón<br />
           <input type="radio" name="pregunta1" value="c" id="correcto1" />c.
           Siamés
-        </h3>
+        </p>
         <button type="button" class="button" onclick="siguientePregunta2()">
           Siguiente
         </button>
@@ -67,12 +66,12 @@
           class="cat"
           alt="gato con su platito de comida"
         />
-        <h2><strong>2. ¿QUÉ TIPO DE DIETA LLEVAN LOS GATOS?</strong></h2>
-        <h3>
+        <h1>2. ¿Qué tipo de dieta llevan los gatos?</h1>
+        <p>
           <input type="radio" name="pregunta2" value="a" />a. Vegetariana
           <input type="radio" name="pregunta2" value="b" id="correcto2" />b.
-          Carnívora <input type="radio" name="pregunta2" value="c" />c. Omnivora
-        </h3>
+          Carnívora <input type="radio" name="pregunta2" value="c" />c. Dulces
+        </p>
         <button
           type="button"
           class="button"
@@ -87,12 +86,13 @@
           src="https://i.pinimg.com/originals/a2/3f/d3/a23fd3b3df5dac8ffdf79ae32168c474.jpg"
           alt="cat sleeping in a weird position"
         />
-        <h2>3. ¿CUÁNTAS HORAS AL DIA DUERMEN LOS GATOS?</h2>
-        <h3>
+        <h1>3. ¿Cuántas horas al día duermen los gatos?</h1>
+        <p>
           <input type="radio" name="pregunta3" value="a" id="correcto3" />a. 12
-          -16 horas <input type="radio" name="pregunta3" value="b" />b. 8 horas
-          <input type="radio" name="pregunta3" value="c" />c. 12 horas
-        </h3>
+          -16 horas <input type="radio" name="pregunta3" value="b" />b. Todo el
+          día <input type="radio" name="pregunta3" value="c" />c. Cuando yo
+          duermo
+        </p>
         <div id="finalizar">
           <button type="button" class="button" onclick="resultado()">
             Finalizar
@@ -101,6 +101,7 @@
       </section>
     </form>
     <section class="reiniciar">
+      <h1>♡ gracias por jugar ♡</h1>
       <img
         src="https://i.pinimg.com/originals/94/71/33/947133df457f84efae50fe6900a4a921.jpg"
         alt="gato dando felicitaciones"
