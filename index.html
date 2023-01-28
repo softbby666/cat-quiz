@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat Quiz</title>
     <link href="style.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="https://i.pinimg.com/736x/09/bb/1a/09bb1a9df5810c4e24b8c487a058a798.jpg"
+    />
+    <!-- <link rel="icon" href="https://art.pixilart.com/5b7f81e18aed4b1.png" /> -->
   </head>
   <body>
     <!-- screen #1 Intro -->
@@ -29,6 +34,10 @@
     <!-- screen #2 Welcome / Start Quiz -->
     <main id="start-quiz" class="start-quiz">
       <h1>Hola, <span id="nombre"></span></h1>
+      <img
+        src="https://i.kym-cdn.com/photos/images/newsfeed/000/698/668/f86.gif"
+        alt=""
+      />
       <button type="button" class="button" id="start" onclick="startButton()">
         Comenzar a jugar
       </button>
@@ -48,7 +57,9 @@
           <input type="radio" name="pregunta1" value="c" id="correcto1" />c.
           Siamés
         </h3>
-        <button type="button" onclick="siguientePregunta2()">Siguiente</button>
+        <button type="button" class="button" onclick="siguientePregunta2()">
+          Siguiente
+        </button>
       </section>
       <section id="pregunta2" class="pregunta2">
         <img
@@ -64,6 +75,7 @@
         </h3>
         <button
           type="button"
+          class="button"
           class="siguientepregunta2"
           onclick="siguientePregunta3()"
         >
@@ -82,7 +94,9 @@
           <input type="radio" name="pregunta3" value="c" />c. 12 horas
         </h3>
         <div id="finalizar">
-          <button type="button" onclick="resultado()">Finalizar</button>
+          <button type="button" class="button" onclick="resultado()">
+            Finalizar
+          </button>
         </div>
       </section>
     </form>
@@ -91,7 +105,7 @@
         src="https://i.pinimg.com/originals/94/71/33/947133df457f84efae50fe6900a4a921.jpg"
         alt="gato dando felicitaciones"
       />
-      <button onclick="reiniciar()">Reiniciar</button>
+      <button class="button" onclick="reiniciar()">Reiniciar</button>
     </section>
     <script src="script.js"></script>
   </body>
