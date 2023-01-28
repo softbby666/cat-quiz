@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gatolicismo</title>
+    <title>Cat Quiz</title>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="intro">
-      <h1 class="bienvenida" id="bienvenida">
-        Bienvenid@ a la trivia del ¡Gatolicismo!
-      </h1>
-      <button id="buttonName">Ingresar nombre</button>
+    <!-- screen #1 Intro -->
+    <header id="intro">
+      <h1>Bienvenid@ a la trivia del ¡Gatolicismo!</h1>
+      <form>
+        <input
+          type="text"
+          id="user-name"
+          class="input"
+          placeholder="What's your name?"
+        />
+        <button type="button" class="button" id="button">Enviar</button>
+      </form>
     </header>
-    <main class="start-quiz">
-      <h1 id="nombre"></h1>
-      <button type="button" onclick="startButton()">Comenzar a jugar</button>
+    <!-- screen #2 Welcome / Start Quiz -->
+    <main id="start-quiz">
+      <h1>Hola, <span id="nombre"></span></h1>
+      <button type="button" class="button" id="start" onclick="startButton()">
+        Comenzar a jugar
+      </button>
     </main>
     <form action="">
       <section id="pregunta1" class="pregunta1">

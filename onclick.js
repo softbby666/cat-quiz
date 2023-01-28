@@ -12,7 +12,7 @@ function myFunction() {
 // 2. Storing Variables
 const buttonA = document.querySelector("#buttonName");
 const headingA = document.querySelector("#nombre");
-
+//window.prompt() instructs the browser to display a dialog with an optional message prompting the user to input some text, and to wait until the user either submits the text or cancels the dialog.
 buttonA.onclick = () => {
   const name = prompt("What is your name?");
   alert(`Hello ${name}, nice to see you!`);

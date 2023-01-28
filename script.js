@@ -1,20 +1,24 @@
-// Screen #1 Intro
-//Declarar 2 variables: Una cuyo valor sea el ID del boton para ingresar el nombre del usuario y otra el ID del título o heading donde va a aparecer el nombre del usuario:
-const buttonN = document.querySelector("#buttonName");
-const heading = document.querySelector("#nombre");
-//window.prompt() instructs the browser to display a dialog with an optional message prompting the user to input some text, and to wait until the user either submits the text or cancels the dialog.
-buttonN.onclick = () => {
-  const name = prompt("¿Cuál es tu nombre?");
-  alert(`Hola, ${name}, es hora de comenzar!`);
-  document.getElementsByClassName("start-quiz")[0].style.display = "block";
-  document.getElementsByClassName("intro")[0].style.display = "none";
-};
+// SCREEN 1
+const inicio = document.querySelector("#intro");
+const btn = document.querySelector("#button"); // ENVIAR NOMBRE JUGADOR
+let input = document.querySelector("#user-name"); // OBTENER NOMBRE JUGADOR
+// SCREEN 2
+const start = document.querySelector("#start-quiz");
+let texto = document.querySelector("#nombre"); // INSERTAR NOMBRE JUGADOR
 
-// Screen #2 Start Quiz
+btn.addEventListener("click", home);
 
-{
-  nombre.textContent = `¿Estás list@ para comenzar la trivia, ${name}?`;
+function home() {
+  const valorUser = input.value.trim();
+  if (valorUser === "") {
+    alert("Ingresa tu nombre");
+  } else {
+    start.style.display = "block";
+    inicio.style.display = "none";
+    texto.innerHTML = valorUser;
+  }
 }
+// QUIZ PREGUNTAS
 function startButton() {
   document.getElementsByClassName("pregunta1")[0].style.display = "block";
   document.getElementsByClassName("start-quiz")[0].style.display = "none";
