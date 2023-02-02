@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1 " />
-    <!-- This is the tag will tell individual devices not to scale the web page but rather to use the initial scale of 1. Meaning if we are in a devices that are 700px across it will render the page as if it is only 700px allowing the rest of the HTML to move around. It won't show you the entire page and scale it down. Makes the web page respond to individual devices and adjust the layout so the users don't have to zoom in on the content. -->
+    <!-- content="width=device-width, initial-scale=1 is the tag will tell individual devices not to scale the web page but rather to use the initial scale of 1. Meaning if we are in a devices that are 700px across it will render the page as if it is only 700px allowing the rest of the HTML to move around. It won't show you the entire page and scale it down. Makes the web page respond to individual devices and adjust the layout so the users don't have to zoom in on the content. -->
     <title>Cat Quiz</title>
     <link rel="stylesheet" href="css/screen.css" media="screen" />
-
-    <!-- The media atribute to define that this particular CSS file is going to be used for screens -->
-
+    <!-- media="screen": The media atribute to define that this particular CSS file is going to be used for screens -->
     <link
       rel="shortcut icon"
       href="https://i.pinimg.com/736x/09/bb/1a/09bb1a9df5810c4e24b8c487a058a798.jpg"
     />
   </head>
   <body>
+    <div id="page"></div>
+    <!-- We put this div so when absolute positions items or give properties to  to individual elements they all be based on this div container called page.-->
+
     <!-- screen #1 Intro -->
     <header id="intro" class="intro">
       <h1>Hola, perrxs</h1>
