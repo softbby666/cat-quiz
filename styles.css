@@ -3,8 +3,8 @@
 :root {
   background: linear-gradient(
     19.44deg,
-    rgb(23, 126, 32) 1.62%,
-    rgb(89, 91, 234) 95.72%
+    rgb(228, 151, 214) 1.62%,
+    rgb(86, 147, 240) 95.72%
   );
   font-size: 62.5%; /*16px is the dafuault size so 62.5% is 10px the root font size is 10px*/
 }
@@ -35,11 +35,11 @@ h1 {
   background-color: rgb(54, 82, 161);
 }
 .input {
+  background-color: #94b3e5;
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.2em;
   text-align: center;
   padding: 0.8rem;
-  background-color: #94b3e5;
   color: black;
   border-radius: 5px;
   border: 1px solid #000000;
