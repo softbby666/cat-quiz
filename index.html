@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 " />
     <!-- content="width=device-width, initial-scale=1 is the tag will tell individual devices noes that are 700px across it will render the page as if it is only 700px allowing the rest of the HTML to move around. It won't show you the entire page and scale it down. Makes the web page respond to individual devices and adjut to scale the web page but rather to use the initial scale of 1. Meaning if we are in a devicst the layout so the users don't have to zoom in on the content. -->
     <title>Cat Quiz</title>
-    <link rel="stylesheet" href="css/screen.css" media="screen" />
+    <link rel="stylesheet" href="styles.css" media="screen" />
     <!-- media="screen": The media atribute to define that this particular CSS file is going to be used for screens -->
     <link
       rel="shortcut icon"
@@ -17,27 +17,26 @@
     <!-- We put this div so when absolute positions items or give properties to  to individual elements they all be based on this div container called page.-->
 
     <!-- screen #1 Intro -->
+
     <header id="intro" class="intro">
-      <form class="container">
-        <h1>Cat quiz app</h1>
-        <img
-          class="img"
-          src="https://i.kym-cdn.com/photos/images/newsfeed/000/698/668/f86.gif"
-          alt=""
-        />
-        <!-- <img
+      <h1>Cat quiz app</h1>
+      <img
+        class="img"
+        src="https://i.kym-cdn.com/photos/images/newsfeed/000/698/668/f86.gif"
+        alt=""
+      />
+      <!-- <img
           class="img"
           src="https://i.pinimg.com/originals/f1/3f/0c/f13f0ca72d8fb6af585cba995ca08a61.jpg"
           alt="gato aesthetic"
         /> -->
-        <input
-          type="text"
-          id="user-name"
-          class="input"
-          placeholder="Introduce tu nombre"
-        />
-        <button type="button" class="submit" id="button">Enviar</button>
-      </form>
+      <input
+        type="text"
+        id="user-name"
+        class="input"
+        placeholder="Introduce tu nombre"
+      />
+      <button type="button" class="submit" id="button">Enviar</button>
     </header>
     <!-- screen #2 Welcome / Start Quiz -->
     <main id="start-quiz" class="start-quiz">
@@ -51,114 +50,101 @@
         Comenzar a jugar
       </button>
     </main>
-    <form action="">
-      <section id="pregunta1" class="pregunta1">
-        <h3>1. ¿Qué tipo de gato es este?</h3>
-        <img
-          class="img"
-          src="https://i.kym-cdn.com/photos/images/newsfeed/000/698/668/f86.gif"
-          alt=""
-        />
-        <!-- <img
-          class="img"
-          src="https://i.pinimg.com/564x/32/8c/56/328c567a117b663e0717fdb3d1461f36.jpg"
-          alt="gato color crema con patas, orejas, nariz y cola de color café oscuro"
-        /> -->
-        <!-- se usa "value" para definir el valor que se enviará por este elemento -->
-        <input
-          type="button"
-          class="answer"
-          name="pregunta1"
-          value="a. Dinosaurio"
-        />
-        <input
-          type="button"
-          class="answer"
-          name="pregunta1"
-          value="b. de cartón"
-        />
-        <input
-          type="button"
-          class="answer"
-          name="pregunta1"
-          value="c. Siamés"
-          id="correcto1"
-        />
-        <button type="button" class="submit" onclick="siguientePregunta2()">
-          Siguiente
+    <section id="pregunta1" class="pregunta1">
+      <h1>1. ¿Qué tipo de gato es este?</h1>
+      <img
+        src="https://i.pinimg.com/564x/32/8c/56/328c567a117b663e0717fdb3d1461f36.jpg"
+        alt="gato color crema con patas, orejas, nariz y cola de color café oscuro"
+      />
+      <!-- se usa "value" para definir el valor que se enviará por este elemento -->
+      <input
+        type="button"
+        class="answer"
+        name="pregunta1"
+        value="A. Dinosaurio"
+      />
+      <input
+        type="button"
+        class="answer"
+        name="pregunta1"
+        value="B. De cartón"
+      />
+      <input
+        type="button"
+        class="answer"
+        name="pregunta1"
+        value="C. Siamés"
+        id="correcto1"
+      />
+      <button type="button" class="submit" onclick="siguientePregunta2()">
+        Siguiente
+      </button>
+    </section>
+    <section id="pregunta2" class="pregunta2">
+      <h1>2. ¿Qué tipo de dieta llevan los gatos?</h1>
+      <img
+        class="img"
+        src="https://i.pinimg.com/originals/97/2d/4d/972d4d1e53f0322522c994dccd1a8a02.jpg"
+        class="cat"
+        alt="gato con su platito de comida"
+      />
+      <input
+        type="button"
+        class="answer"
+        name="pregunta2"
+        value="A. Vegetariana"
+      />
+      <input
+        type="button"
+        class="answer"
+        name="pregunta2"
+        value="B. Carnívora"
+        id="correcto2"
+      />
+      <input type="button" class="answer" name="pregunta2" value="C. Dulces" />
+      <button
+        type="button"
+        class="submit"
+        class="siguientepregunta2"
+        onclick="siguientePregunta3()"
+      >
+        Siguiente
+      </button>
+    </section>
+    <section id="pregunta3" class="pregunta3">
+      <h1>3. ¿Cuántas horas al día duermen los gatos?</h1>
+      <img
+        class="img"
+        src="https://i.pinimg.com/originals/a2/3f/d3/a23fd3b3df5dac8ffdf79ae32168c474.jpg"
+        alt="cat sleeping in a weird position"
+      />
+      <input
+        type="button"
+        class="answer"
+        name="pregunta3"
+        value="A. 12 -16 horas"
+        id="correcto3"
+      />
+      <input
+        type="button"
+        class="answer"
+        name="pregunta3"
+        value="B. Todo el día"
+      />
+      <input
+        type="button"
+        class="answer"
+        name="pregunta3"
+        value="C. Cuando yo duermo"
+      />
+      <div id="finalizar">
+        <button type="button" class="submit" onclick="resultado()">
+          Finalizar
         </button>
-      </section>
-      <section id="pregunta2" class="pregunta2">
-        <h3>2. ¿Qué tipo de dieta llevan los gatos?</h3>
-        <img
-          class="img"
-          src="https://i.pinimg.com/originals/97/2d/4d/972d4d1e53f0322522c994dccd1a8a02.jpg"
-          class="cat"
-          alt="gato con su platito de comida"
-        />
-        <input
-          type="button"
-          class="answer"
-          name="pregunta2"
-          value="a. Vegetariana"
-        />
-        <input
-          type="button"
-          class="answer"
-          name="pregunta2"
-          value="B. Carnívora"
-          id="correcto2"
-        />
-        <input
-          type="button"
-          class="answer"
-          name="pregunta2"
-          value="c. Dulces"
-        />
-        <button
-          type="button"
-          class="submit"
-          class="siguientepregunta2"
-          onclick="siguientePregunta3()"
-        >
-          Siguiente
-        </button>
-      </section>
-      <section id="pregunta3" class="pregunta3">
-        <h3>3. ¿Cuántas horas al día duermen los gatos?</h3>
-        <img
-          class="img"
-          src="https://i.pinimg.com/originals/a2/3f/d3/a23fd3b3df5dac8ffdf79ae32168c474.jpg"
-          alt="cat sleeping in a weird position"
-        />
-        <input
-          type="button"
-          class="answer"
-          name="pregunta3"
-          value="a. 12 -16 horas"
-          id="correcto3"
-        />
-        <input
-          type="button"
-          class="answer"
-          name="pregunta3"
-          value="B. Todo el día"
-        />
-        <input
-          type="button"
-          class="answer"
-          name="pregunta3"
-          value="C. Cuando yo duermo"
-        />
-        <div id="finalizar">
-          <button type="button" class="submit" onclick="resultado()">
-            Finalizar
-          </button>
-        </div>
-      </section>
-    </form>
+      </div>
+    </section>
     <section class="reiniciar">
-      <p>♡ gracias por jugar ♡</p>
+      <h1>♡ gracias por jugar ♡</h1>
       <img
         class="img"
         src="https://i.pinimg.com/originals/94/71/33/947133df457f84efae50fe6900a4a921.jpg"
