@@ -1,75 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400&display=swap");
-body {
+/* Voy a usar :root para poder aplicar medidas relativas rem y em */
+:root {
   background: linear-gradient(
     19.44deg,
     rgb(23, 126, 32) 1.62%,
     rgb(89, 91, 234) 95.72%
   );
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  height: 100vh;
-  color: antiquewhite;
+  font-size: 62.5%; /*16px is the dafuault size so 62.5% is 10px the root font size is 10px*/
+}
+* {
+  box-sizing: border-box; /*This  means if I add a border to a box it's gonna include the width of that border in calculated REPASAR */
   padding: 0;
   margin: 0;
   /* padding y margin 0 that way anything inside the body element will touch the edges of the browser */
 }
+body {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  height: 100vh;
+}
 h1 {
   font-family: "IBM Plex Mono", monospace;
-  margin: 30px 25px 0px 25px;
-}
-p {
-  display: block;
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin: 30px 25px 15px 25px;
+  font-size: 1.5em;
+  color: white;
 }
 .intro {
-  background: rgb(75, 85, 163);
   border: 1px solid #000000;
-  border-radius: 50px;
+  border-radius: 35px;
+  align-items: center;
+  margin: auto;
 }
-
-.input,
-.button {
+.input {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.5em;
+  font-size: 1.2em;
+  text-align: center;
   padding: 0.8rem;
-  background-color: #aac3eb;
+  background-color: #94b3e5;
   color: black;
   border-radius: 5px;
   border: 1px solid #000000;
+  /* width: ; */
   margin: 25px auto;
   display: block; /*display:block y margin:auto permiten centrar los botones*/
 }
 form input:focus {
-  outline: none;
+  outline: none; /*elimina el borde interno*/
 }
-.input {
-  width: 70%;
-}
-.input:hover {
-  background-color: rgb(255, 252, 252);
-}
-::placeholder {
-  opacity: 1;
-}
-.button {
+.submit {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  background-color: #aac3eb;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  margin: 25px auto;
+  display: block; /*display:block y margin:auto permiten centrar los botones*/
+  width: 60%;
   cursor: pointer;
 }
-.button:hover {
+.submit:hover {
   background-color: rgb(33, 186, 120);
 }
-.button:focus {
-  outline: none;
-  background-color: rgb(144, 141, 146);
+.answer {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.5rem;
+  background-color: rgb(125, 150, 197, 0.6);
+  padding: 0.8rem;
+  border-radius: 25px;
+  border: 1px solid #000000;
+  display: flex;
+  margin: 25px auto;
+  width: 60%;
 }
-.img {
-  max-width: 350px;
-  max-height: 350px;
+.answer:hover {
+  background-color: rgb(236, 118, 159);
+}
+.answer:focus {
+  outline: none;
+  background-color: rgb(236, 118, 159);
+}
+img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
 }
 .start-quiz,
 .pregunta1,
@@ -77,5 +93,12 @@ form input:focus {
 .pregunta3,
 .reiniciar,
 .finalizar {
+  background: rgb(43, 47, 92);
+  border: 1px solid #000000;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
   display: none;
+  max-width: 80rem;
+  margin: 0 auto;
 }

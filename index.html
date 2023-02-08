@@ -13,26 +13,30 @@
     />
   </head>
   <body>
-    <div id="page"></div>
+    <!-- <div class="page"> -->
     <!-- We put this div so when absolute positions items or give properties to  to individual elements they all be based on this div container called page.-->
 
     <!-- screen #1 Intro -->
     <header id="intro" class="intro">
-      <h1>Cat quiz app</h1>
-      <br />
-      <img
-        class="img"
-        src="https://i.pinimg.com/originals/f1/3f/0c/f13f0ca72d8fb6af585cba995ca08a61.jpg"
-        alt="gato aesthetic"
-      />
       <form class="container">
+        <h1>Cat quiz app</h1>
+        <img
+          class="img"
+          src="https://i.kym-cdn.com/photos/images/newsfeed/000/698/668/f86.gif"
+          alt=""
+        />
+        <!-- <img
+          class="img"
+          src="https://i.pinimg.com/originals/f1/3f/0c/f13f0ca72d8fb6af585cba995ca08a61.jpg"
+          alt="gato aesthetic"
+        /> -->
         <input
           type="text"
           id="user-name"
           class="input"
           placeholder="Introduce tu nombre"
         />
-        <button type="button" class="button" id="button">Enviar</button>
+        <button type="button" class="submit" id="button">Enviar</button>
       </form>
     </header>
     <!-- screen #2 Welcome / Start Quiz -->
@@ -43,45 +47,77 @@
         src="https://i.kym-cdn.com/photos/images/newsfeed/000/698/668/f86.gif"
         alt=""
       />
-      <button type="button" class="button" id="start" onclick="startButton()">
+      <button type="button" class="submit" id="start" onclick="startButton()">
         Comenzar a jugar
       </button>
     </main>
     <form action="">
       <section id="pregunta1" class="pregunta1">
-        <h1>1. ¿Qué tipo de gato es este?</h1>
+        <h3>1. ¿Qué tipo de gato es este?</h3>
         <img
+          class="img"
+          src="https://i.kym-cdn.com/photos/images/newsfeed/000/698/668/f86.gif"
+          alt=""
+        />
+        <!-- <img
           class="img"
           src="https://i.pinimg.com/564x/32/8c/56/328c567a117b663e0717fdb3d1461f36.jpg"
           alt="gato color crema con patas, orejas, nariz y cola de color café oscuro"
+        /> -->
+        <!-- se usa "value" para definir el valor que se enviará por este elemento -->
+        <input
+          type="button"
+          class="answer"
+          name="pregunta1"
+          value="a. Dinosaurio"
         />
-        <p>
-          <!-- se usa "value" para definir el valor que se enviará por este elemento -->
-          <input type="radio" name="pregunta1" value="a" />a. Dinosaurio <br />
-          <input type="radio" name="pregunta1" value="b" />b. De cartón<br />
-          <input type="radio" name="pregunta1" value="c" id="correcto1" />c.
-          Siamés
-        </p>
-        <button type="button" class="button" onclick="siguientePregunta2()">
+        <input
+          type="button"
+          class="answer"
+          name="pregunta1"
+          value="b. de cartón"
+        />
+        <input
+          type="button"
+          class="answer"
+          name="pregunta1"
+          value="c. Siamés"
+          id="correcto1"
+        />
+        <button type="button" class="submit" onclick="siguientePregunta2()">
           Siguiente
         </button>
       </section>
       <section id="pregunta2" class="pregunta2">
-        <h1>2. ¿Qué tipo de dieta llevan los gatos?</h1>
+        <h3>2. ¿Qué tipo de dieta llevan los gatos?</h3>
         <img
           class="img"
           src="https://i.pinimg.com/originals/97/2d/4d/972d4d1e53f0322522c994dccd1a8a02.jpg"
           class="cat"
           alt="gato con su platito de comida"
         />
-        <p>
-          <input type="radio" name="pregunta2" value="a" />a. Vegetariana
-          <input type="radio" name="pregunta2" value="b" id="correcto2" />b.
-          Carnívora <input type="radio" name="pregunta2" value="c" />c. Dulces
-        </p>
+        <input
+          type="button"
+          class="answer"
+          name="pregunta2"
+          value="a. Vegetariana"
+        />
+        <input
+          type="button"
+          class="answer"
+          name="pregunta2"
+          value="B. Carnívora"
+          id="correcto2"
+        />
+        <input
+          type="button"
+          class="answer"
+          name="pregunta2"
+          value="c. Dulces"
+        />
         <button
           type="button"
-          class="button"
+          class="submit"
           class="siguientepregunta2"
           onclick="siguientePregunta3()"
         >
@@ -89,34 +125,46 @@
         </button>
       </section>
       <section id="pregunta3" class="pregunta3">
-        <h1>3. ¿Cuántas horas al día duermen los gatos?</h1>
+        <h3>3. ¿Cuántas horas al día duermen los gatos?</h3>
         <img
           class="img"
           src="https://i.pinimg.com/originals/a2/3f/d3/a23fd3b3df5dac8ffdf79ae32168c474.jpg"
           alt="cat sleeping in a weird position"
         />
-
-        <p>
-          <input type="radio" name="pregunta3" value="a" id="correcto3" />a. 12
-          -16 horas <input type="radio" name="pregunta3" value="b" />b. Todo el
-          día <input type="radio" name="pregunta3" value="c" />c. Cuando yo
-          duermo
-        </p>
+        <input
+          type="button"
+          class="answer"
+          name="pregunta3"
+          value="a. 12 -16 horas"
+          id="correcto3"
+        />
+        <input
+          type="button"
+          class="answer"
+          name="pregunta3"
+          value="B. Todo el día"
+        />
+        <input
+          type="button"
+          class="answer"
+          name="pregunta3"
+          value="C. Cuando yo duermo"
+        />
         <div id="finalizar">
-          <button type="button" class="button" onclick="resultado()">
+          <button type="button" class="submit" onclick="resultado()">
             Finalizar
           </button>
         </div>
       </section>
     </form>
     <section class="reiniciar">
-      <h1>♡ gracias por jugar ♡</h1>
+      <p>♡ gracias por jugar ♡</p>
       <img
         class="img"
         src="https://i.pinimg.com/originals/94/71/33/947133df457f84efae50fe6900a4a921.jpg"
         alt="gato dando felicitaciones"
       />
-      <button class="button" onclick="reiniciar()">Reiniciar</button>
+      <button class="submit" onclick="reiniciar()">Reiniciar</button>
     </section>
     <script src="script.js"></script>
   </body>
