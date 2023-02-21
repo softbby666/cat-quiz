@@ -1,36 +1,36 @@
 :root {
   background-color: #9aa9b9;
-  font-size: 62.5%;
+  font-size: 62.5%; /*redimensiona el tamaño de fuente a 10px*/
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /*border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements. box-sizing: border-box is the default styling that browsers use for the <table>, <select>, and <button> elements, and for <input> elements whose type is radio, checkbox, reset, button, submit, color, or search.*/
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 0;
-  color: #333;
+  padding: 0; /*reset margin and padding*/
+  color: #2f2d3d; /*black can be pretty harsh*/
 }
 
 h1,
 h2,
 h3,
 h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /*relative to the root margin*/
 }
 
 h1 {
-  font-size: 5.4rem;
+  font-size: 5.4rem; /*relative to the root font size*/
   color: #18191a;
   margin-bottom: 5rem;
 }
 
-h1 > span {
-  font-size: 2.4rem;
+/* h1 > span {
+  font-size: 2.4rem; 
   font-weight: 500;
-}
+} */
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 4.2rem; /*relative to the root font size*/
   margin-bottom: 4rem;
   font-weight: 700;
 }
@@ -43,22 +43,23 @@ h3 {
 /* UTILITIES */
 
 .container {
+  /*center all our content*/
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 80rem;
-  margin: 0 auto;
+  margin: 0 auto; /*centra la imagen con margen automático a la izquierda y derecha. */
+  display: flex; /*turns this container in a flexbox container*/
+  justify-content: center; /*will center things horizontally*/
+  align-items: center; /*will center things vertically*/
+  padding: 2rem;
 }
-
 .container > * {
   width: 100%;
 }
 
 .flex-column {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /*set the direction to a column because default felxbox direction is horizontal, so we flip the direction to be vertical*/
 }
 
 .flex-center {
@@ -80,25 +81,29 @@ h3 {
 
 /* BUTTONS */
 .btn {
+  /*etiqueta <a> o link que vamos a estilar como botón*/
   font-size: 1.8rem;
   padding: 1rem 0;
   width: 20rem;
   text-align: center;
-  border: 0.1rem solid #56a5eb;
+  border: 0.2rem solid #101e2a;
+  border-radius: 25px;
   margin-bottom: 1rem;
-  text-decoration: none;
-  background-color: white;
+  text-decoration: none; /*removes the anchor tag underline*/
+  color: antiquewhite;
+  background-color: rgb(57, 87, 207);
 }
 
 .btn:hover {
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-  transform: translateY(-0.1rem);
-  transition: transform 150ms;
+  transform: translateY(-0.3rem);
+  transition: transform 15ms;
+  background-color: rgb(14, 37, 125);
 }
 
-.btn[disabled]:hover {
+/* .btn[disabled]:hover {
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
-}
+} */
